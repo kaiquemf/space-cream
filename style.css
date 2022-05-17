@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap');
+*{
+  margin: 0; border: 0; padding: 0; box-sizing: border-box;
+}
+:root{
+  font-size: 62.5%;
+  --font-headding: 'Staatliches', sans-serif;
+    --font-content: 'Roboto', sans-serif;
+    --tc-primary:#FFFFFF;
+    --tc-secondary:hsl(275, 84%, 12%);
+    --tc-terciary:hsl(275, 17%, 35%);
+
+    --fs-body:clamp( 1.6rem, 1rem + 3vh , 2rem);
+    --fs-headding:clamp( 2rem, 4rem,  5rem);
+
+    --hue:275;
+
+    --bg-body:hsl(233, 100%, 97%);
+    --bg-header:hsl(218, 17%, 62%);
+
+    --bg-title:hsl(275, 18%, 79%);
+    --bg-box:hsl(var(--hue), 91%, 96%);
+}
+.page{
+  display: flex;
+}
+.page2{
+  display: flex; flex-direction: column;
+  align-items: center;
+}
+body::before{
+  content: ''; position: absolute; z-index: -1; top: 0; left: 0;
+  background: var(--bg-header); width: 37.7rem; height: 100%;
+}
+header img{
+  margin: 0 auto; padding-left: 8rem; padding-top: 3.2rem
+}
+header h1{
+  font-family: var(--font-headding); font-size: 4.8rem; line-height: 3.4rem; color: var(--tc-primary); text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  background: var(--bg-title); width: 37.7rem; padding: 2rem 7rem; align-items: center; justify-content: center; text-align: center; display: flex;
+  margin-top: 3.2rem;
+}
+header p{
+  padding: 3.2rem 5.1rem; max-width: 37.7rem; display: flex; text-align: center;
+  font-family: var(--font-content); color: var(--tc-primary); font-size: 2.2rem; line-height: 2rem;
+}
+main{
+  display: grid; margin-left: 9.8rem; margin-top: 6.4rem;
+  grid-template-columns: repeat(3, 1fr); grid-auto-rows: 15rem; row-gap: 3.2rem; column-gap: 3.2rem;
+}
+.card{
+  width: 22rem; height: 15rem;
+}
+#img5{
+  margin-top: 19.9rem;
+}
+main img{
+  position: absolute;
+}
+main h2{
+  position: relative; top: 1.2rem; left: 12rem; padding: 0.25rem 2rem; border-radius: 2rem; width: fit-content;
+  font-family: var(--font-headding); background: var(--bg-title);
+}
+main + footer{
+  margin-top: 30rem;
+}
+footer{
+  font-family: var(--font-content);
+}
